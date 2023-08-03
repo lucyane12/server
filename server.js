@@ -45,3 +45,7 @@ wss.on('connection', (ws) => {
     console.log('Klien terputus.');
   });
 });
+
+app.get('/',async(req,res) => {
+  res.send('<h1>Server telab online</h1>');
+});
